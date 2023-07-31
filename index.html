@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raga Sudha-Portfolio></Sudha-Portfolio></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400&family=Ysabeau+Infant:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(234, 176, 191);
+            color: black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75px;
+            background-color: rgb(217, 230, 244);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: darkmagenta;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: black;
+            height: 1.2px;
+            margin: 10px 2px;
+        }
+
+        .left {
+            font-size: 1.66rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 1.5rem;
+            margin: 50px 0;
+        }
+
+        .leftSection .btn {
+            color: black;
+            border: -1px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 70%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: darkblue;
+        }
+
+        #element {
+            color: darkblue;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondSection .box {
+            background-color: black;
+            width: 50vw;
+            height: 1.2px;
+            margin: 0 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            background-color: black;
+            height: 13px;
+            width: 1.3px;
+            margin: 0 90px;
+        }
+
+        .vertical-title {
+            position: relative;
+            left: -30px;
+            top: 10px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 46px;
+            color: black;
+            width: 250px;
+            font-size: 9px;
+            left: -140px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Raga's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Education</a></li>
+                    <li><a href="/">Certifications</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello,My name is <span class="purple">Raga Sudha</span>
+                <div>I'm a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1ttDlWM_km481bsfY4xaxD4cdPkmFjT2g/view?usp=drive_link" target="_blank">
+                    <button class="btn">Download Resume </button>
+                </a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Projects</h1>
+            <div class="box">
+                <div class="vertical">
+
+                    <div class="vertical-title">Drowsiness Detection</div>
+
+                </div>
+                <div class="vertical-desc">
+                    This project is based on CNN algorithm. It detects drowsiness
+                    and alerts the driver by sending an alarm, thereby driver,
+                    people in vehicle, vehicle etc.,are safeguarded.
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">Portfolio</div>
+
+                </div>
+                <div class="vertical-desc">
+                    This project is built using HTML, CSS, and JS. It describes my educational background, including my degrees, skills, and noteworthy academic accomplishments.
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['cse enthusiast', 'cyber enthusiast'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
